@@ -3,6 +3,7 @@ import { Text, TouchableOpacity } from 'react-native';
 import { RFPercentage } from 'react-native-responsive-fontsize';
 import { Button } from 'react-native-paper';
 
+//Styling the App text button with effects before and on press
 function AppTextButton({ facebook = false, google = false, disabled = false, name, onPress = () => { }, width, height = RFPercentage(6), borderRadius = RFPercentage(1.2), backgroundColor = "black", buttonStyle, textStyle }) {
     return (
         <TouchableOpacity onPress={onPress} style={{

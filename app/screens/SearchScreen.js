@@ -12,7 +12,7 @@ import Colors from '../config/Colors';
 import { RFPercentage } from 'react-native-responsive-fontsize';
 
 function SearchScreen(props) {
-
+    //Creating the input fields for the search form
     const [inputField, setInputFeild] = useState([
         {
             id: 0,

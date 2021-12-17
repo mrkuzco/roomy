@@ -15,7 +15,7 @@ import BannerAd from '../components/common/BannerAd';
 //config
 import Colors from './../config/Colors';
 
-
+//Creating the pop up form for added a images and accesing both the mobiles camera and gallery
 function MyPageScreen(props) {
     const [pickedVideo, setVideo] = useState(null);
     const [modelVisible, setmodelVisible] = useState(false)
@@ -60,6 +60,7 @@ function MyPageScreen(props) {
         }
     };
 
+    //Creating the form for the 
     const [inputField, setInputFeild] = useState([
         {
             id: 0,
@@ -77,7 +78,7 @@ function MyPageScreen(props) {
         },
         {
             id: 2,
-            placeHolder: "Status",
+            placeHolder: "Occupation",
             value: '',
             secure: false,
             icon: "ring"
@@ -91,7 +92,7 @@ function MyPageScreen(props) {
         },
         {
             id: 4,
-            placeHolder: "Prefrences (Place,Sex)",
+            placeHolder: "Residence",
             value: '',
             secure: false,
             icon: false

@@ -17,6 +17,7 @@ import Colors from '../config/Colors';
 
 const { width } = Dimensions.get("window");
 
+//Creating the pop up form for added a images and accesing both the mobiles camera and gallery
 function AnnounceScreen(props) {
     const [initialComponent, setinitialComponent] = useState(0);
     const [active, setActive] = useState(0);
@@ -119,7 +120,7 @@ function AnnounceScreen(props) {
                     {/* Top Heading */}
                     <View style={{ height: RFPercentage(12), width: '100%', justifyContent: 'center', alignItems: 'center', backgroundColor: Colors.primary}}>
                         <Text style={{ color: Colors.white, fontSize: RFPercentage(4.5) }}>
-                        Annouce
+                        Announce
                         </Text>
                     </View>
 

@@ -5,6 +5,8 @@ import { RFPercentage } from 'react-native-responsive-fontsize';
 
 import Colors from "../../config/Colors"
 
+
+//Styling the different text input fields
 function AppTextInput({ keyboard = "default", backgroundColor = Colors.lightGrey, autoFocus = false, elevation = 0, borderColor = Colors.primary, rightIcon = false, rightFunction, borderWidth = 0, placeHolder, value, onChange, width = "100%", height = RFPercentage(6), icon, secure = false, iconType = "MaterialCommunityIcons", editable = true, startEdit, endEdit }) {
 
     return (

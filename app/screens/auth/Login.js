@@ -10,6 +10,7 @@ import LoadingModal from "../../components/common/LoadingModal"
 // config
 import Colors from '../../config/Colors';
 
+//Creating the input fields for the APP login
 function Login(props) {
     const [indicator, showIndicator] = useState(false);
 
@@ -30,6 +31,7 @@ function Login(props) {
         },
     ]);
 
+    //Handling the changes
     const handleChange = (text, id) => {
         const tempFeilds = [...inputField];
         tempFeilds[id].value = text;
@@ -60,6 +62,7 @@ function Login(props) {
     };
 
 
+    //Returning the login form and login button
     return (
         <View style={styles.container}>
 

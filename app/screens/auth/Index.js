@@ -24,6 +24,7 @@ function LoginScreen(props) {
     const [translateXTabTwo, setTranslateXTabTwo] = useState(new Animated.Value(width));
     const [translateY, setTranslateY] = useState(-1000);
 
+    //Handling the slide function to change from signup to login
     const handleSlide = type => {
         setinitialComponent(initialComponent + 1)
         Animated.spring(translateX, {
@@ -60,6 +61,7 @@ function LoginScreen(props) {
         }
     };
 
+    //Displaying the login and signup form
     return (
         <View style={styles.container}>
 

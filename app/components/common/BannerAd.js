@@ -7,12 +7,18 @@
 import React from "react";
 import { Platform, View } from "react-native";
 import { AdMobBanner } from "expo-ads-admob";
+
+//Using the expo-ads-admob module to create banner ads for Google Advertingsing in the APP
+
+//First a form that uses the platform module from react-native, to find out if it's on a IOS og Android device.
+//To find the right Ad unit ID.
 const BannerAd = () => {
   const adUnitID = Platform.select({
     ios: "ca-app-pub-3940256099942544/2934735716",
     android: "ca-app-pub-8530734164234524/6210206664",
   });
 
+  //Returning the banner style.
   return (
     <View style={{ position: "absolute", bottom: 90}}>
       <AdMobBanner

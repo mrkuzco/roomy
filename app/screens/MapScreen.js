@@ -12,6 +12,7 @@ import BannerAd from '../components/common/BannerAd';
 //config
 import Colors from './../config/Colors';
 
+//Displayning the Map screen
 function MapScreen(props) {
     return (
         <Screen style={{ flex: 1, justifyContent: 'flex-start', alignItems: 'center', backgroundColor: Colors.primary }}>

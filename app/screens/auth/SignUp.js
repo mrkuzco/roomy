@@ -11,6 +11,7 @@ import LoadingModal from "../../components/common/LoadingModal"
 // config
 import Colors from '../../config/Colors';
 
+//Creating the input fields for the APP signup form
 function SignUp(props) {
     const [indicator, showIndicator] = useState(false);
 

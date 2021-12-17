@@ -12,6 +12,8 @@ import LoadingModal from "../../components/common/LoadingModal"
 // config
 import Colors from '../../config/Colors';
 
+
+//Creating the input fields for the Roomie search form
 function RoomieTextFields(props) {
     const [indicator, showIndicator] = useState(false);
 
@@ -32,34 +34,35 @@ function RoomieTextFields(props) {
         },
         {
             id: 2,
-            placeHolder: "Status",
+            placeHolder: "Occupation",
             value: '',
             secure: false,
             icon: "ring"
         },
         {
             id: 3,
-            placeHolder: "Place",
+            placeHolder: "Location",
             value: '',
             secure: false,
             icon: "map-marker"
         },
         {
             id: 4,
-            placeHolder: "Size",
+            placeHolder: "Room size",
             value: '',
             secure: false,
             icon: "move-resize-variant"
         },
         {
             id: 5,
-            placeHolder: "Prefrences (Place,Sex)",
+            placeHolder: "Preferences for roomie (place,sex etc.)",
             value: '',
             secure: false,
             icon: false
         },
     ]);
 
+    //The handler to read changes in the input fields
     const handleChange = (text, id) => {
         const tempFeilds = [...inputField];
         tempFeilds[id].value = text;
@@ -86,12 +89,11 @@ function RoomieTextFields(props) {
         showIndicator(false);
     };
 
-
+    //Returning the form, and the input fields is showed by the use of mapping.
     return (
         <View style={styles.container}>
 
             <LoadingModal show={indicator} />
-
             {/* Text feilds */}
             {inputField.map((item, i) =>
                 <View key={i} style={{ marginTop: i == 0 ? RFPercentage(0) : RFPercentage(3), width: "100%" }} >

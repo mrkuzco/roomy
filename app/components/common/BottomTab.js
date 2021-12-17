@@ -6,6 +6,7 @@ import { Ionicons, MaterialIcons } from '@expo/vector-icons';
 //config
 import Colors from '../../config/Colors';
 
+//Creating the bottomtab navigation bar, to control the APP
 function BottomTab({ props }) {
     return (
         <View style={{ flexDirection: 'row', alignItems: 'center', position: 'absolute', justifyContent: 'center', bottom: 0, width: "100%", height: RFPercentage(9), backgroundColor: Colors.primary, paddingBottom: 20 }}>

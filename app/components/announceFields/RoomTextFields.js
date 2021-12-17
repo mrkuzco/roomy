@@ -10,6 +10,7 @@ import LoadingModal from "../../components/common/LoadingModal"
 // config
 import Colors from '../../config/Colors';
 
+//Creating the input fields for the Room search form
 function RoomTextFields(props) {
     const [indicator, showIndicator] = useState(false);
 
@@ -30,41 +31,43 @@ function RoomTextFields(props) {
         },
         {
             id: 2,
-            placeHolder: "Status",
+            placeHolder: "Occupation",
             value: '',
             secure: false,
             icon: "ring"
         },
         {
             id: 3,
-            placeHolder: "Place",
+            placeHolder: "Location",
             value: '',
             secure: false,
             icon: "map-marker"
         },
         {
             id: 4,
-            placeHolder: "Prefferd Place",
+            placeHolder: "Preferred placement",
             value: '',
             secure: false,
             icon: "map-marker"
         },
         {
             id: 5,
-            placeHolder: "Prefferd Sex",
+            placeHolder: "Preferred sex",
             value: '',
             secure: false,
             icon: false
         },
         {
             id: 6,
-            placeHolder: "Price Range",
+            placeHolder: "Price range",
             value: '',
             secure: false,
             icon: false
         },
     ]);
 
+    
+    //The handler to read changes in the input fields
     const handleChange = (text, id) => {
         const tempFeilds = [...inputField];
         tempFeilds[id].value = text;
@@ -91,6 +94,7 @@ function RoomTextFields(props) {
     };
 
 
+    //Returning the form, and the input fields is showed by the use of mapping.
     return (
         <View style={styles.container}>
 
