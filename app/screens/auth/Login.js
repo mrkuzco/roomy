@@ -92,6 +92,22 @@ function Login(props) {
                     width="80%"
                 />
             </View>
+            <View style={{ width: "100%", marginTop: RFPercentage(5), justifyContent: 'center', alignItems: 'center' }} >
+                <AppTextButton
+                    name="Login with Facebook"
+                    onPress={() => handleLogin()}
+                    backgroundColor={Colors.secondary}
+                    width="80%"
+                />
+            </View>
+            <View style={{ width: "100%", marginTop: RFPercentage(5), justifyContent: 'center', alignItems: 'center' }} >
+                <AppTextButton
+                    name="Login with Google"
+                    onPress={() => handleLogin()}
+                    backgroundColor={Colors.secondary}
+                    width="80%"
+                />
+            </View>
         </View>
     );
 }
